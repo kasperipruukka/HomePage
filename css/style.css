@@ -1,0 +1,284 @@
+* {
+    font-family: 'Rhodium Libre', serif;
+}
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+#minusta {
+    scroll-behavior: smooth;
+}
+
+#Kasperi {
+    color: #fff;
+    font-size: 25px;
+    text-shadow: 0px 5px 10px #000;
+    align-self: flex-start;
+}
+
+.nappi {
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.color-container-1 {
+    background-color: #004399;
+}
+
+.color-container-2 {
+    background-image: url("../img/Kala.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgb(0, 34, 80, 0.80);
+    background-attachment: fixed;
+}
+
+.color-container-3 {
+    background-color: #002250;
+}
+
+.heading-container-1 {
+    padding: 100px;
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #004399;
+}
+
+.heading-container-2 {
+    padding: 100px;
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-md-12.yrittaja{
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    justify-content: center;
+}
+
+.col-md-12 .row {
+    align-items: center;
+    width: 100%;
+}
+
+.col-md-6{
+    padding: 0px !important;
+}
+
+.col-md-6.left.etu h2 {
+    line-height: 40px;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 20px;
+    text-shadow: 0px 5px 10px #000;
+}
+
+.col-md-6.right.etu {
+    background-image: url("../img/Oma.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    border-radius: 50px;
+    border: 1px solid #5B96E4 ;
+    box-shadow: 0px 5px 10px #000;
+}
+
+.col-md-12.nuoli {
+    text-align: center;
+    top: -100px;
+}
+
+.nuoli img {
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 15px #000;
+    transition: transform .2s;
+}
+
+.nuoli img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.col-md-12.minusta {
+    padding: 100px 0px 100px 0px;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    justify-content: center;
+}
+
+.col-md-6 {
+    padding: 0px !important;
+}
+
+.col-md-6.left h2 {
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 0px 5px 10px #000;
+}
+
+.col-md-6.right ul {
+    line-height: 20px;
+}
+
+.col-md-6.right li {
+    list-style-type: none;
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 0px 5px 10px #000;
+}
+
+.col-md-6.right img {
+    margin-right: 20px;
+    transition: transform .2s;
+}
+
+.col-md-6.right img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.col-md-12.referenssi {
+    padding: 100px 0px 100px 0px;
+}
+
+.right.refe {
+    text-align: center;
+}
+
+.right.refe img {
+    border-radius: 50px;
+    transition: transform .2s;
+}
+
+.right.refe img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.li-heading {
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .col-md-6.right ul {
+        padding: 0;
+    }
+
+    .col-md-6.right li {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    #Kasperi {
+        margin: 0 auto;
+        padding: 50px 0px 50px 0px ;
+    }
+
+    .heading-container-1 {
+        padding: 0;
+    }
+
+    .heading-container-2 {
+        padding: 0;
+    }
+
+    .col-md-12 .row {
+        flex-direction: column;
+    }
+
+    .col-md-12.col-md-12.minusta {
+        padding: 0;
+    }
+
+    .col-md-12.col-md-12.referenssi {
+        padding: 0;
+    }
+    .col-md-12.col-md-12.referenssi .row {
+        margin: 0;
+    }
+
+    .col-md-6.left.etu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col-md-6.left.etu a {
+        text-align: center;
+    }
+
+    .col-md-6.right.etu {
+        margin-top: 50px;
+        height: 300px;
+    }
+    
+    .col-md-6.right li {
+        font-size: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .col-md-6.right ul {
+        padding: 0;
+    }
+
+    .col-md-6.left h2 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #minusta > div > div > div > div.col-md-6.right > ul > li:nth-child(12) {
+        text-align: center;
+        padding: 0;
+    }
+
+    #minusta > div > div > div > div.col-md-6.right > ul > li:nth-child(12) > a {
+        margin: 0;
+    }
+
+    .col-md-6.right.right.refe li {
+        padding: 0;
+    }
+
+    .col-md-6.right.right.refe img {
+        margin: 0;
+        width: 300px;
+        margin-bottom: 50px;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+    .col-md-12.minusta {
+        padding: 250px 0px 250px 0px;
+    }
+
+    .col-md-12.referenssi {
+        padding: 100px 0px 400px 0px;
+    }
+
+    .color-container-2 {
+        background-attachment: inherit;
+        box-shadow: inset 0 0 0 1000px rgba(0, 37, 80, 0.70);
+        border-collapse: separate;
+    }
+
+}
