@@ -175,6 +175,13 @@
 
 @media only screen and (max-width: 1200px) {
 
+    .color-container-2 {
+        background-attachment: inherit;
+        background-position: center;
+        box-shadow: inset 0 0 0 1000px rgba(0, 37, 80, 0.70);
+        border-collapse: separate;
+    }
+
     .col-md-6.right ul {
         padding: 0;
     }
@@ -186,6 +193,13 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+    .color-container-2 {
+        background-attachment: inherit;
+        background-position: center;
+        box-shadow: inset 0 0 0 1000px rgba(0, 37, 80, 0.70);
+        border-collapse: separate;
+    }
 
     #Kasperi {
         margin: 0 auto;
