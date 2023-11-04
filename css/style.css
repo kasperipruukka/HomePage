@@ -14,6 +14,10 @@
     align-self: flex-start;
 }
 
+.tyokuva img {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 10);
+}
+
 .nappi {
     justify-content: center;
     align-self: flex-end;
@@ -83,8 +87,10 @@
     background-image: url("../img/Oma.jpg");
     background-size: cover;
     background-position: center;
-    height: 500px;
-    clip-path: circle(50% at center);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .col-md-12.nuoli {
@@ -150,7 +156,7 @@
 }
 
 .col-md-12.referenssi {
-    padding: 100px 0px 100px 0px;
+    padding: 0px;
 }
 
 .right.refe {
@@ -169,6 +175,7 @@
 
 .li-heading {
     margin-bottom: 50px;
+    padding-top: 100px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -181,6 +188,11 @@
         font-size: 15px;
     }
 
+    .col-md-6.right.etu {
+        height: 325px;
+        width: 325px;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -188,6 +200,11 @@
     #Kasperi {
         margin: 0 auto;
         padding: 50px 0px 50px 0px ;
+    }
+
+    .li-heading {
+        margin-bottom: 0px;
+        padding-top: 100px;
     }
 
     .heading-container-1 {
@@ -226,6 +243,7 @@
     .col-md-6.right.etu {
         margin-top: 50px;
         height: 300px;
+        width: 300px;
     }
     
     .col-md-6.right li,
