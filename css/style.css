@@ -24,7 +24,7 @@
 }
 
 .color-container-1 {
-    background-color: #004399;
+    background-color: #0047AB;
 }
 
 .color-container-2 {
@@ -37,7 +37,7 @@
 }
 
 .color-container-3 {
-    background-color: #002250;
+    background-color: #002855;
 }
 
 .heading-container-1 {
@@ -48,7 +48,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #004399;
+    background-color: #0047AB;
 }
 
 .heading-container-2 {
