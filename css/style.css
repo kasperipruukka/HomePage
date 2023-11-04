@@ -1,13 +1,10 @@
 * {
     font-family: 'Rhodium Libre', serif;
+    scroll-behavior: smooth;
 }
 
 #wrapper {
     overflow-x: hidden;
-}
-
-#minusta {
-    scroll-behavior: smooth;
 }
 
 #Kasperi {
@@ -78,7 +75,6 @@
 .col-md-6.left.etu h2 {
     line-height: 40px;
     color: #fff;
-    text-decoration: underline;
     font-size: 20px;
     text-shadow: 0px 5px 10px #000;
 }
@@ -88,9 +84,7 @@
     background-size: cover;
     background-position: center;
     height: 500px;
-    border-radius: 50px;
-    border: 1px solid #5B96E4 ;
-    box-shadow: 0px 5px 10px #000;
+    clip-path: circle(50% at center);
 }
 
 .col-md-12.nuoli {
@@ -122,18 +116,22 @@
     padding: 0px !important;
 }
 
-.col-md-6.left h2 {
+.col-md-6.left h2,
+.col-md-12 h2 {
     line-height: 40px;
     color: #fff;
     font-size: 20px;
     text-shadow: 0px 5px 10px #000;
 }
 
-.col-md-6.right ul {
+.col-md-6.right ul,
+.col-md-12 ul {
     line-height: 20px;
+    padding: 0px;
 }
 
-.col-md-6.right li {
+.col-md-6.right li,
+.col-md-12 li {
     list-style-type: none;
     line-height: 40px;
     color: #fff;
@@ -175,13 +173,6 @@
 
 @media only screen and (max-width: 1200px) {
 
-    .color-container-2 {
-        background-attachment: inherit;
-        background-position: center;
-        box-shadow: inset 0 0 0 1000px rgba(0, 37, 80, 0.70);
-        border-collapse: separate;
-    }
-
     .col-md-6.right ul {
         padding: 0;
     }
@@ -193,13 +184,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-
-    .color-container-2 {
-        background-attachment: inherit;
-        background-position: center;
-        box-shadow: inset 0 0 0 1000px rgba(0, 37, 80, 0.70);
-        border-collapse: separate;
-    }
 
     #Kasperi {
         margin: 0 auto;
@@ -244,19 +228,26 @@
         height: 300px;
     }
     
-    .col-md-6.right li {
+    .col-md-6.right li,
+    .col-md-12 li {
         font-size: 15px;
         padding-left: 50px;
         padding-right: 50px;
     }
 
-    .col-md-6.right ul {
+    .col-md-6.right ul,
+    .col-md-12 li {
         padding: 0;
     }
 
-    .col-md-6.left h2 {
+    .col-md-6.left h2,
+    .col-md-12.right li {
         margin-top: 20px;
         text-align: center;
+    }
+
+    .col-md-12 ul {
+        padding: 25px;
     }
 
     #minusta > div > div > div > div.col-md-6.right > ul > li:nth-child(12) {
@@ -277,22 +268,4 @@
         width: 300px;
         margin-bottom: 50px;
     }
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-
-    .col-md-12.minusta {
-        padding: 250px 0px 250px 0px;
-    }
-
-    .col-md-12.referenssi {
-        padding: 100px 0px 400px 0px;
-    }
-
-    .color-container-2 {
-        background-attachment: inherit;
-        box-shadow: inset 0 0 0 1000px rgba(0, 37, 80, 0.70);
-        border-collapse: separate;
-    }
-
 }
