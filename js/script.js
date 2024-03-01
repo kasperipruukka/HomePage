@@ -9,31 +9,22 @@ function setAge(id) {
     return;
   }
 
-  const age = getAge('1997-09-26');
+  const age = calculateAge('1997-09-26');
   element.textContent = age;
 }
 
-function getAge(birthDate) {
-  const ageFallbackValue = 26;
+function calculateAge(birthdate) {
+  const birthDate = new Date(birthdate);
+  const currentDate = new Date();
 
-  const birthYear = getBirthYear(birthDate);
-  if (!birthYear) {
-    return ageFallbackValue;
-  }
+  let age = currentDate.getFullYear() - birthDate.getFullYear();
+  const monthsDiff = currentDate.getMonth() - birthDate.getMonth();
 
-  const age = new Date().getFullYear() - birthYear;
-  if (!age || isNaN(age)) {
-    return ageFallbackValue;
+  if (monthsDiff < 0 || (monthsDiff === 0 && currentDate.getDate() < birthDate.getDate())) {
+    age--;
   }
 
   return age;
-}
-
-function getBirthYear(birthDate) {
-  if (!birthDate) return;
-
-  const birthYear = new Date(birthDate).getFullYear();
-  return birthYear;
 }
 
 function logMessage(message) {
