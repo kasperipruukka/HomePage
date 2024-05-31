@@ -81,16 +81,6 @@
     font-size: 20px;
 }
 
-.col-md-6.right.etu {
-    background-image: url("../img/Oma.png");
-    background-size: 85%;
-    background-position: center;
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
 .col-md-12.nuoli {
     text-align: center;
     top: -100px;
@@ -120,6 +110,10 @@
     padding: 0px !important;
 }
 
+.col-md-6.right.etu img {
+    border-radius: 100%;
+}
+
 .col-md-6.left h2,
 .col-md-12 h2 {
     line-height: 40px;
@@ -144,12 +138,6 @@
 
 .col-md-6.right img {
     margin-right: 20px;
-    transition: transform .2s;
-}
-
-.col-md-6.right img:hover {
-    transform: scale(1.2);
-    cursor: pointer;
 }
 
 .col-md-12.referenssi {
@@ -171,7 +159,7 @@
 }
 
 .li-heading {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding-top: 100px;
 }
 
