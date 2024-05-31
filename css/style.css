@@ -8,14 +8,13 @@
 }
 
 #Kasperi {
-    color: #fff;
+    color: #2e3941;
     font-size: 25px;
-    text-shadow: 0px 5px 10px #000;
     align-self: flex-start;
 }
 
 .tyokuva img {
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 10);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 .nappi {
@@ -24,7 +23,7 @@
 }
 
 .color-container-1 {
-    background-color: #0047AB;
+    background-color: #fafafa;
 }
 
 .color-container-2 {
@@ -32,12 +31,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgb(0, 34, 80, 0.80);
+    box-shadow: inset 0 0 0 1000px #2e3941cc;
     background-attachment: fixed;
 }
 
 .color-container-3 {
-    background-color: #002855;
+    background-color: #2e3941;
 }
 
 .heading-container-1 {
@@ -48,7 +47,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #0047AB;
+    background-color: #fafafa;
 }
 
 .heading-container-2 {
@@ -78,9 +77,8 @@
 
 .col-md-6.left.etu h2 {
     line-height: 40px;
-    color: #fff;
+    color: #2e3941;
     font-size: 20px;
-    text-shadow: 0px 5px 10px #000;
 }
 
 .col-md-6.right.etu {
@@ -91,7 +89,6 @@
     width: 400px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
 }
 
 .col-md-12.nuoli {
@@ -128,7 +125,6 @@
     line-height: 40px;
     color: #fff;
     font-size: 20px;
-    text-shadow: 0px 5px 10px #000;
 }
 
 .col-md-6.right ul,
